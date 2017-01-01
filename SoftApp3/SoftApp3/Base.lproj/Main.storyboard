@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SoftApp3" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Future App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EhS-26-iN0">
+                                <rect key="frame" x="161" y="20" width="85" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oHL-Ot-zQa">
+                                <rect key="frame" x="143" y="134" width="88" height="30"/>
+                                <state key="normal" title="ExecMathOp"/>
+                                <connections>
+                                    <action selector="mathOp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NoD-f6-2dn"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Value1" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="J2f-jL-2ZS">
+                                <rect key="frame" x="139" y="189" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="iyr-jx-3F4"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Value 2" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="jfk-2D-og8">
+                                <rect key="frame" x="143" y="257" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="Odv-gs-BoU"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="oHL-Ot-zQa" firstAttribute="top" secondItem="EhS-26-iN0" secondAttribute="bottom" constant="93" id="BCz-ca-IiU"/>
+                            <constraint firstItem="J2f-jL-2ZS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="F0M-ca-te6"/>
+                            <constraint firstItem="jfk-2D-og8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="4" id="Oct-su-RMM"/>
+                            <constraint firstItem="oHL-Ot-zQa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WVl-Jy-ae9"/>
+                            <constraint firstItem="EhS-26-iN0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="16" id="amr-dq-QNo"/>
+                            <constraint firstItem="J2f-jL-2ZS" firstAttribute="top" secondItem="oHL-Ot-zQa" secondAttribute="bottom" constant="25" id="bHt-S3-0KI"/>
+                            <constraint firstItem="EhS-26-iN0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="16" id="izj-Hq-ScG"/>
+                            <constraint firstItem="EhS-26-iN0" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="o1g-Wz-WJf"/>
+                            <constraint firstItem="jfk-2D-og8" firstAttribute="top" secondItem="J2f-jL-2ZS" secondAttribute="bottom" constant="38" id="zqX-YT-Ijz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="appName" destination="EhS-26-iN0" id="BsH-JU-okj"/>
+                        <outlet property="value1" destination="J2f-jL-2ZS" id="dq3-dy-pN7"/>
+                        <outlet property="value2" destination="jfk-2D-og8" id="y2q-dN-643"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
